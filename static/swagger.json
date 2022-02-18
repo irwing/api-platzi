@@ -1,0 +1,136 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Api to get data my user from platzi, based on scraping with python, Selenium and Beautiful Soup",
+    "version": "1.0.0",
+    "title": "🚀 Api platzi",
+    "contact": {
+      "email": "khalisser@gmail.com"
+    },
+    "github": {
+      "url": "https://gisthub.com/irwing"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "api.domainproject.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/users/:username": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get a user",
+        "description": "Get a user",
+        "operationId": "getUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "username",
+            "description": "Username of user without @, example: khalisser",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                
+                  "careers:": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "approved": {
+                          "type": "boolean"
+                        },
+                        "color": {
+                          "type": "string"
+                        },
+                        "diploma_link": {
+                          "type": "string"
+                        },
+                        "golden_achievement": {
+                          "type": "string"
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "courses:": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "approved": {
+                          "type": "boolean"
+                        },
+                        "badge": {
+                          "type": "string"
+                        },
+                        "color": {
+                          "type": "string"
+                        },
+                        "diploma_link": {
+                          "type": "string"
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "username": {
+                    "type": "string"
+                  },
+                  "utctime": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized",
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Github repository",
+    "url": "https://github.com/irwing/api-platzi"
+  }
+}

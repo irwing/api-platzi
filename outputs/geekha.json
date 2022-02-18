@@ -1,0 +1,150 @@
+{
+    "username": "geekha", 
+    "careers:": [
+        {
+            "diploma_link": "/p/geekha/ruta/37-desarrollo-wordpress/diploma/detalle/", 
+            "title": "Desarrollo con WordPress", 
+            "color": "#005134", 
+            "image": "https://static.platzi.com/media/learningpath/badges/badge-wordpress.png", 
+            "golden_achievement": "https://static.platzi.com/media/achievements/Wordpress.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/ruta/10-desarrollo-php/diploma/detalle/", 
+            "title": "Desarrollo Web Backend con PHP", 
+            "color": "057302", 
+            "image": "https://static.platzi.com/media/learningpath/badges/6829a61e-5fdd-4855-9446-1304b22c9491.jpg", 
+            "golden_achievement": "https://static.platzi.com/media/learningpath/golden_badges/3b3f6b5b-ac06-4d2c-be9f-58e41f3282e3.jpg", 
+            "approved": true
+        }
+    ], 
+    "utctime": 1645142970, 
+    "courses:": [
+        {
+            "diploma_link": "/p/geekha/curso/1814-basico-javascript/diploma/detalle/", 
+            "title": "Curso B\u00e1sico de JavaScript", 
+            "color": "#97cb4e", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/basico-javascript/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-basicojs-e2ead888-428e-4f55-962c-8894aeaeacda.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/1789-asincronismo-js/diploma/detalle/", 
+            "title": "Curso de Asincronismo con JavaScript", 
+            "color": "#97cb4e", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/asincronismo-js/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-asincronismo-javascript-3f44d51e-209e-4e47-a228-4142d049525c.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/2485-backend-nodejs/diploma/detalle/", 
+            "title": "Curso de Backend con Node.js: API REST con Express.js", 
+            "color": "#f6e01c", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/backend-nodejs/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-backend-nodejs-apirest-expressjs-3fc7bca3-8dcb-459c-9638-12c92d502f5f.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/2489-passport/diploma/detalle/", 
+            "title": "Curso de Backend con Node.js: Autenticaci\u00f3n con Passport.js y JWT", 
+            "color": "#f6e01c", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/passport/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-backend-nodejs-autenticacion-passportjs-jwt-3425c859-2f69-49a5-849a-792049d24.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/2507-backend-nodejs-postgres/diploma/detalle/", 
+            "title": "Curso de Backend con Node.js: Base de Datos con PostgreSQL", 
+            "color": "#f6e01c", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/backend-nodejs-postgres/", 
+            "badge": "https://static.platzi.com/media/achievements/backend-node-82a9a4bf-7ce4-4437-86f6-c39dcce17d15.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/1807-scope/diploma/detalle/", 
+            "title": "Curso de Closures y Scope en JavaScript", 
+            "color": "#97cb4e", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/scope/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-_closures-scope-javascript-3848a8e7-cf6f-47c5-a824-df5fc0c14d41.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/1815-ecmascript-6/diploma/detalle/", 
+            "title": "Curso de ECMAScript 6+", 
+            "color": "#f0db4f", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/ecmascript-6/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-ecmascript-6-d48e7bb7-a7a4-416d-a3b4-e11f0b13a229.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/1763-npm/diploma/detalle/", 
+            "title": "Curso de Gesti\u00f3n de Dependencias y Paquetes con NPM", 
+            "color": "", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/npm/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-gestion-dependencias-paquetes-npm-f02e4608-c688-4d99-aa6d-293ea6c0be8d.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/2508-introduccion-backend/diploma/detalle/", 
+            "title": "Curso de Introducci\u00f3n al Desarrollo Backend", 
+            "color": "#95c73f", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/introduccion-backend/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-introduccion-desarrollo-backend-c9d6cd7f-4de1-42a5-b9c5-2c014b6bfce9.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/2444-react/diploma/detalle/", 
+            "title": "Curso de Introducci\u00f3n a React.js", 
+            "color": "#68E4F9", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/react/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-react-2018-0a41bdc5-e874-45c9-ac67-98294c898da4.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/1798-javascript-navegador/diploma/detalle/", 
+            "title": "Curso de JavaScript Engine (V8) y el Navegador", 
+            "color": "#97cb4e", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/javascript-navegador/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-javascript-engine-v8-navegador-de67cba4-0548-4361-9c6a-1a25aa96fa2a.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/1765-postman/diploma/detalle/", 
+            "title": "Curso de Postman 2020", 
+            "color": "#2a361a", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/postman/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-postaman-4d6e9a21-4553-4f0e-8e5d-6592b1151988.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/2214-prework-macos/diploma/detalle/", 
+            "title": "Curso de Prework: Configuraci\u00f3n de Entorno de Desarrollo en macOS", 
+            "color": "#f6e01c", 
+            "image": "https://static.platzi.com/media/achievements/platzi-bd.png", 
+            "url": "/cursos/prework-macos/", 
+            "badge": "https://static.platzi.com/media/achievements/badge-prework-configuracion-entorno-mac-6199e54d-551f-4abf-8587-44484337702e.png", 
+            "approved": true
+        }, 
+        {
+            "diploma_link": "/p/geekha/curso/1050-programacion-basica/diploma/detalle/", 
+            "title": "Curso Gratis de Programaci\u00f3n B\u00e1sica", 
+            "color": "#95c73f", 
+            "image": "https://static.platzi.com/media/courses/programacion-basica2x.png", 
+            "url": "/cursos/programacion-basica/", 
+            "badge": "https://static.platzi.com/media/achievements/1050-bfb74f83-8e2e-4ff7-a66d-77d2c0067908.png", 
+            "approved": true
+        }
+    ]
+}
