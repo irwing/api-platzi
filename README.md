@@ -9,8 +9,8 @@ domainproject.com/docs
 #### 📦 Major package versions
 - python 2.7.18
 - bs4 4.9.3
-- elenium .141.0
+- selenium .141.0
 - flask 1.1.4
 
 #### 📋 Issues
-- 
+- Improve clear_data functions on libs/ScrapingPlatzi
