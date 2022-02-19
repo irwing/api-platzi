@@ -1,0 +1,9 @@
+beautifulsoup4
+requests
+selenium
+webdriver-manager
+flask-restful
+flask_swagger_ui
+swagger_server
+flask-cors
+python-dotenv
