@@ -1,0 +1,66 @@
+:root {
+  --color-primary: #202C33;
+  --color-secondary: #4AA984;
+  --color-dark: #0F0F0F;
+  --color-light: #F5F5F5;
+  --color-warning: #F5A623;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error-page i {
+  font-size: 4rem;
+  color: var(--color-warning);
+  margin-bottom: 0.5rem;
+}
+.error-page h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+}
+.error-page h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+.error-page .links-options {
+  display: flex;
+  flex-direction: column;
+}
+.error-page .links-options a {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid var(--color-secondary);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--main-primary);
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.error-page .links-options a:hover {
+  border: 2px solid var(--color-light);
+  color: var(--color-light);
+}

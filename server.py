@@ -33,7 +33,7 @@ app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
 # router /
 @app.route("/")
 def index():
-  return render_template("404.html")
+  return render_template("index.html")
 
 # routers users
 @app.route('/users/<username>')
@@ -41,24 +41,24 @@ def users(username):
 
   # validate if header api-key not exists or if diferent to config["API_KEY"]
   if (request.headers.get("api-key") != config["APIKEY"]):
-    return render_template("401.html"), 401
+    return render_template("errors/401.html"), 401
 
   try:
     Scraping = scraping.ScrapingPlatzi(username)
     data = Scraping.scraping()
   except Exception as e:
     print(e)
-    return render_template("500.html"), 500
+    return render_template("errors/500.html"), 500
 
   if(data == 404):
-    return render_template("404.html"), 404
+    return render_template("errors/404.html"), 404
 
   return data
 
 # error 404
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404.html'), 404
+    return render_template('errors/404.html'), 404
 
 if __name__ == '__main__':
   app.run(debug=config['DEBUG'], host=config['HOST'], port=config['PORT'])
