@@ -1,64 +1,37 @@
-from flask import Flask, render_template, request
+from distutils.command.config import config
+from flask import Flask, render_template
 from flask_restful import Api
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask_cors import CORS
-from dotenv import dotenv_values
 
-# include ScrapingPlatzi
-from libs import scraping
-
-# get environment variables
-config = dotenv_values(".env")
-
-print(config["PORT"])
+from resources.user import User
+from config.config import Config
 
 app = Flask(__name__)
 api = Api(app)
-
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
-
-SWAGGER_URL = '/docs'
-API_URL = '/static/swagger.json'
-SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
-  SWAGGER_URL,
-  API_URL,
-  config={
-    'app_name': "My Rest App"
-  }
-)
+app.config = Config(app.config).setFromEnv()
+cors = CORS(app, resources={r'/*': {'origins': '*'}})
 
 # route docs
-app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
+app.register_blueprint(get_swaggerui_blueprint(
+  '/docs',
+  '/static/swagger.json',
+  config={ 'app_name': "Api Platzi" }
+))
 
-# router /
+# route home
 @app.route("/")
 def index():
   return render_template("index.html")
 
 # routers users
-@app.route('/users/<username>')
-def users(username):
+api.add_resource(User, '/users', '/users/<string:username>')
 
-  # validate if header api-key not exists or if diferent to config["API_KEY"]
-  if (request.headers.get("api-key") != config["APIKEY"]):
-    return render_template("errors/401.html"), 401
-
-  try:
-    Scraping = scraping.ScrapingPlatzi(username)
-    data = Scraping.scraping()
-  except Exception as e:
-    print(e)
-    return render_template("errors/500.html"), 500
-
-  if(data == 404):
-    return render_template("errors/404.html"), 404
-
-  return data
-
-# error 404
+# errorhandler
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('errors/404.html'), 404
+  return render_template('errors/404.html'), 404
 
+# init app
 if __name__ == '__main__':
-  app.run(debug=config['DEBUG'], host=config['HOST'], port=config['PORT'])
+  app.run(debug=app.config['DEBUG'], host=app.config['HOST'], port=app.config['PORT'])

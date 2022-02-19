@@ -25,14 +25,20 @@ class ScrapingPlatzi():
     title = soup.find('title').text
     if(title.find("404") != -1):
       self.driver.quit()
-      return 404
+      return {
+        "success": False,
+        "error": 404
+      }
 
     self.driver.quit()
 
     ''' clear the html '''
     htmlCleared = self.clear_data()
     
-    return htmlCleared
+    return {
+      "success": True,
+      "data": htmlCleared
+    }
 
   def clear_data(self):
 
